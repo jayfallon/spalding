@@ -1,0 +1,21 @@
+#vanityWrapper.pull-left
+	div.user_details_avatar.pull-left
+		img(src="/images/temp_avatar.png")
+	ul.user_details_vanity.pull-left
+		li.username 
+			a(href="/username") Firstname MI Lastname Lastname
+		li.title Job Title, <a href="/department/departmentname">Department</a>
+		li.location 
+			a(href="/organization/locations") Location Location
+	
+	ul.user_details_actions.pull-right
+		li.dismiss
+			.btn-group
+				a.btn.dropdown-toggle(data-toggle="dropdown", href="#") User Settings&nbsp;
+					span.caret
+				ul.dropdown-menu	
+					li 
+						a(href="#") Disable
+					li 
+						a(href="#") Nuke
+		

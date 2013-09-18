@@ -1,0 +1,22 @@
+.userEventsHeader
+	.row
+		.span1
+			.header Risk Score
+		.span7
+			.header User
+		.span3.offset1
+			.header.date Last Active
+- x = 87;
+- for (i=0;i<=23;i++)
+	.userEventsWrapper
+		.row
+			.span1
+				div.score= (x--) 
+				div.trend
+			.span7 
+				div.event
+					a(href="/username") Firstname MI Lastname Lastname<br>
+					| Job Title<br>
+					a(href="/location") Location
+			.span3.offset1 
+				div.timeDate May 13, 2013<br>3:37:22 UTC

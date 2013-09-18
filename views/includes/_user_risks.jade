@@ -1,0 +1,9 @@
+.userRisksWrapper.pull-left
+	.userRisksHeader User Risks
+	- for (i=0;i<=4;i++)
+		.userRiskRow.pull-left
+			.userRiskLabel.pull-left Risk Label
+			.userRiskScore.pull-right= Math.floor(Math.random()*80+1)
+			
+script
+	$(".userRiskRow").last().css("border-bottom","0px");

@@ -1,0 +1,64 @@
+extends ../layouts/default
+
+block content
+	div.container
+		.row
+			.span12
+				include ../includes/_organization_nav
+				
+		include ../includes/_organization_filter_map_dead
+
+		.row
+			.span12
+				#organizationUsers
+					- x = 93
+					- for (i=0;i<=4;i++)
+						div.userRow.pull-left.incident
+							ul.userRisk.pull-left
+								li.riskScore= (x--)
+								li.riskLabel 
+							ul.userMeta.pull-left
+								li.username 
+									a(href="/users/username") Firstname Lastname Lastname
+								li.titleDepartment Title, Department
+								li.location Location, Location
+							div.pull-right
+								ul.incidentDescription.pull-left
+									li.incidentTimeDate May 13th, 2013 at 03:19:21 UTC
+									li.incidentMessage Jay Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								ul.incidentAction.pull-left
+									li.dismiss
+										button.btn.btn-danger Action
+													
+					- for (i=0;i<=4;i++)
+						div.userRow.pull-left
+							ul.userRisk.pull-left
+								li.riskScore= (x--)
+								li.riskLabel 
+							ul.userMeta.pull-left
+								li.username 
+									a(href="/users/username") Firstname Lastname Lastname
+								li.titleDepartment Title, Department
+								li.location Location, Location
+							div.pull-right
+								ul.incidentDescription.pull-left
+									li.incidentTimeDate May 13th, 2013 at 03:19:21 UTC
+									li.incidentMessage Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								ul.incidentAction.pull-left
+									li.dismiss
+										button.btn Action
+
+					
+						
+				
+
+block document
+	include ../includes/_organization_document
+	script
+		$(function(){
+			$("#locationRollUp a:nth-child(5) ul").addClass('active');
+			$("li.dismiss button").click(function(){
+				$(this).toggleClass("btn-danger");
+				$(this).parents().toggleClass("incident");
+			});
+		});

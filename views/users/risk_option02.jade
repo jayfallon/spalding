@@ -1,0 +1,94 @@
+extends ../layouts/default
+
+block content
+	div.container
+		include ../includes/_users_nav
+		form
+			ul#users_filter.nav.pull-right
+				li.pull-left
+					include ../includes/_risk_factors
+				li.pull-left.hackSpace
+					include ../includes/_departments
+
+		.row
+			.span12
+				p.pull-right Showing 300 users by risk score. 
+
+		.row
+			.span
+				- x = 87
+				- for (i = 0; i <= 4; i++)
+					a(href="/username")
+						div.userTile.pull-left.shadow.trendUpNeg
+							ul
+								li.riskScore= (x--)
+								li.trend
+								li.attitude
+								li.attitudeCount
+								li.userName Lastname, Firstname
+								li.department Department
+				- for (i = 0; i <= 7; i++)
+					a(href="/username")
+						div.userTile.pull-left.shadow.trendStaticNeg
+							ul
+								li.riskScore= (x--)
+								li.trend
+								li.attitude
+								li.attitudeCount
+								li.userName Lastname, Firstname
+								li.department Department
+		.row
+			.span
+				- for (i = 0; i <= 21; i++)
+					a(href="/username")
+						div.userTile.pull-left.shadow.trendUpPos
+							ul
+								li.riskScore= (x--)
+								li.trend
+								li.attitude
+								li.attitudeCount
+								li.userName Lastname, Firstname
+								li.department Department
+				- for (i = 0; i <= 9; i++)
+					a(href="/username")
+						div.userTile.pull-left.shadow
+							ul
+								li.riskScore= (x--)
+								li.trend
+								li.attitude
+								li.attitudeCount
+								li.userName Lastname, Firstname
+								li.department Department
+								
+				- for (i = 0; i <= 154; i++)
+					a(href="/username")
+						div.userTile.pull-left.shadow
+							ul
+								li.riskScore 20
+								li.trend
+								li.attitude
+								li.attitudeCount
+								li.userName Lastname, Firstname
+								li.department Department
+								
+				- for (i = 0; i <= 100; i++)
+					a(href="/username")
+						div.userTile.pull-left.shadow
+							ul
+								li.riskScore 11
+								li.trend
+								li.attitude
+								li.attitudeCount
+								li.userName Lastname, Firstname
+								li.department Department
+							
+						
+
+block document
+	script
+		$(function(){
+			$('#users_nav li:nth-child(1), #main_nav li:nth-child(1)').addClass('active');
+			$(".userTile:eq(2), .userTile:eq(5)").addClass('trendDownNeg');
+			$(".userTile:eq(7)").addClass('trendUpNeg');
+			$(".userTile:eq(24), .userTile:eq(28), .userTile:eq(30), .userTile:eq(34), .userTile:eq(44)").addClass('trendDownPos');
+		});

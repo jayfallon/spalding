@@ -1,0 +1,64 @@
+extends ../layouts/default
+
+block content
+	div.container
+		include ../includes/_users_nav
+		form
+			ul#users_filter.nav.pull-right
+				li.pull-left.hackSpace
+					include ../includes/_departments
+
+		.row
+			.span12
+				p.pull-right Showing 51 users from <a href="/department">XYZ Department</a>. 
+
+		.row
+			.span
+				- x = Math.floor(Math.random()*12+1)
+				- for (i = 0; i <= 4; i++)
+					a(href="/username")
+						div.userTile.pull-left.shadow
+							ul
+								li.riskScore= Math.floor(Math.random()*87)
+								li.trend
+								li.attitude Assets
+								li.attitudeCount= x
+								li.userName Lastname, Firstname
+								li.department Department
+				- for (i = 0; i <= 5; i++)
+					a(href="/username")
+						div.userTile.pull-left.shadow
+							ul
+								li.riskScore= Math.floor(Math.random()*87)
+								li.trend
+								li.attitude Assets
+								li.attitudeCount= (x-1)
+								li.userName Lastname, Firstname
+								li.department Department
+				- for (i = 0; i <= 21; i++)
+					a(href="/username")
+						div.userTile.pull-left.shadow
+							ul
+								li.riskScore= Math.floor(Math.random()*87)
+								li.trend
+								li.attitude Assets
+								li.attitudeCount= (x-2)
+								li.userName Lastname, Firstname
+								li.department Department
+				- for (i = 0; i <= 12; i++)
+					a(href="/username")
+						div.userTile.pull-left.shadow
+							ul
+								li.riskScore= Math.floor(Math.random()*87)
+								li.trend
+								li.attitude Assets
+								li.attitudeCount 1
+								li.userName Lastname, Firstname
+								li.department Department			
+
+
+block document
+	script
+		$(function(){
+			$('#users_nav li:nth-child(3), #main_nav li:nth-child(1)').addClass('active');
+		});

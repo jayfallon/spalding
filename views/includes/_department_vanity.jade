@@ -1,0 +1,24 @@
+#vanityWrapper.pull-left
+	div.user_details_avatar.pull-left
+		img(src="/images/temp_avatar.png")
+	ul.user_details_vanity.pull-left
+	ul.user_details_vanity.pull-left
+		li.username 
+			a(href="/department/departmentname") Department Name
+		li.users
+			= Math.floor(Math.random()*80+1)
+			span &nbsp;Total Users
+		li.location 
+			a(href="/location") Department Location or Variant
+
+	ul.user_details_actions.pull-right
+		li.dismiss
+			.btn-group
+				a.btn.dropdown-toggle(data-toggle="dropdown", href="#") Department Settings&nbsp;
+					span.caret
+				ul.dropdown-menu	
+					li 
+						a(href="#") Disable
+					li 
+						a(href="#") Nuke
+

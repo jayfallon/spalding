@@ -1,0 +1,9 @@
+script
+	$(function(){
+		$("ul.locationRollUp").first().addClass('locationRollUpFirst');
+		$("ul.locationRollUp").last().addClass('locationRollUpLast');
+		$('div.mapToggle a').click(function(){
+			$('#map').slideToggle();
+			$('div.mapToggle li').toggleClass('active');
+		});
+	});

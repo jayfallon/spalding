@@ -1,0 +1,391 @@
+html, body {
+  background-color: #555;
+  color: #555; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#wrapper {
+  background: #fafafa;
+  padding-bottom: 20px; }
+
+footer {
+  padding: 20px;
+  color: #ababab;
+  font-size: 13px;
+  text-transform: uppercase; }
+  footer a {
+    color: #ababab; }
+  footer a:hover {
+    color: #fff; }
+
+ul.footerMenu li {
+  margin-left: 12px;
+  float: left; }
+
+#pageHeader {
+  padding-top: 15px; }
+
+.userdrop {
+  margin: 6px 0 0 12px; }
+
+#navWrapper {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cfcfcf;
+  width: 940px; }
+
+h1.logo {
+  background: url(/images/logo.png) no-repeat;
+  padding: 0;
+  margin: 0;
+  height: 40px;
+  width: 200px; }
+  h1.logo a {
+    height: 40px;
+    width: 200px;
+    position: absolute; }
+  h1.logo span {
+    display: none; }
+
+div.userTile {
+  background: #fdfdfd url(/images/trend_static_pos.png) no-repeat center 59px;
+  margin: 4px;
+  padding: 10px 10px;
+  width: 160px;
+  min-height: 160px;
+  text-align: center; }
+  div.userTile li.riskScore {
+    color: #c1c1c1;
+    font-size: 40px;
+    line-height: 36px; }
+  div.userTile li.trend {
+    height: 25px; }
+  div.userTile li.attitude {
+    min-height: 20px;
+    padding-top: 14px;
+    color: #888;
+    font-size: 12px;
+    text-transform: uppercase; }
+  div.userTile li.attitudeCount {
+    min-height: 24px;
+    padding-bottom: 10px;
+    color: #888;
+    font-size: 20px; }
+  div.userTile li.userName {
+    color: #888;
+    font-size: 14px; }
+  div.userTile li.department {
+    color: #aaa;
+    font-size: 12px;
+    text-transform: uppercase; }
+
+div.trendStaticNeg {
+  background: white url(/images/trend_static_neg.png) no-repeat center 59px; }
+  div.trendStaticNeg li.riskScore {
+    color: #777; }
+
+div.trendUpPos {
+  background: #fdfdfd url(/images/trend_up_pos.png) no-repeat center 59px; }
+
+div.trendDownPos {
+  background: #fdfdfd url(/images/trend_down_pos.png) no-repeat center 59px; }
+
+div.trendUpNeg {
+  background: white url(/images/trend_up_neg.png) no-repeat center 59px; }
+  div.trendUpNeg li.riskScore {
+    color: #777; }
+
+div.trendDownNeg {
+  background: white url(/images/trend_down_neg.png) no-repeat center 59px; }
+  div.trendDownNeg li.riskScore {
+    color: #777; }
+
+#mapWrapper {
+  padding: 5px; }
+  #mapWrapper a {
+    color: #999;
+    font-weight: bold; }
+  #mapWrapper a:hover {
+    text-decoration: none; }
+
+#map {
+  background: #fff;
+  margin-bottom: 10px;
+  display: none; }
+
+#locationRollUp {
+  background: #fdfdfd;
+  margin: 0 0 10px 0; }
+
+ul.locationRollUp {
+  margin: 0 auto;
+  border-right: 1px solid #f3f3f3;
+  border-left: 1px solid #fff;
+  width: 154px;
+  text-align: center; }
+  ul.locationRollUp li.sum {
+    padding: 10px 0;
+    color: #ababab;
+    font-size: 40px;
+    line-height: 36px; }
+  ul.locationRollUp li.locationLabel {
+    padding-bottom: 10px;
+    color: #bababa;
+    font-size: 12px;
+    text-transform: uppercase; }
+
+ul.locationRollUp:hover {
+  background-color: #c1c1c1;
+  color: #fafafa; }
+  ul.locationRollUp:hover li {
+    color: #fff; }
+
+ul.locationRollUp.active {
+  background-color: #aaa;
+  border-right: 0; }
+  ul.locationRollUp.active li {
+    color: #fafafa; }
+
+ul.locationRollUpFirst {
+  width: 157px;
+  border-left: 0px; }
+
+ul.locationRollUpLast {
+  width: 157px;
+  border-right: 0px; }
+
+#locationUsers {
+  margin-top: 10px; }
+
+#vanityWrapper {
+  margin-bottom: 25px;
+  width: 940px; }
+  #vanityWrapper div.user_details_avatar {
+    background-color: #fff;
+    padding: 5px; }
+
+ul.user_details_vanity {
+  margin-left: 12px; }
+  ul.user_details_vanity a {
+    text-decoration: none; }
+  ul.user_details_vanity li.username {
+    color: #777;
+    font-size: 18px; }
+  ul.user_details_vanity li.title {
+    margin-top: 5px;
+    font-size: 13px;
+    text-transform: uppercase; }
+
+ul.risk_score {
+  color: #999;
+  width: 154px; }
+  ul.risk_score li {
+    margin-bottom: 12px;
+    text-align: center; }
+  ul.risk_score li.totalScore {
+    font-size: 40px; }
+  ul.risk_score li.totalScoreLabel {
+    font-size: 12px;
+    text-transform: uppercase; }
+  ul.risk_score li.trend {
+    background: url(/images/trend_up_pos.png) no-repeat center;
+    height: 25px; }
+
+#userCompromisesWrapper {
+  margin-top: 4px; }
+
+div.compromiseHeaderWrapper {
+  background-color: #fff;
+  padding-bottom: 8px;
+  cursor: pointer; }
+  div.compromiseHeaderWrapper div.timeDate {
+    padding: 10px;
+    text-align: center; }
+  div.compromiseHeaderWrapper div.compromiseHeader {
+    padding: 10px;
+    font-weight: bold; }
+
+div.compromiseDetailsWrapper {
+  padding: 10px 0;
+  display: none; }
+  div.compromiseDetailsWrapper div.compromiseDetail {
+    padding: 5px 20px;
+    width: 270px; }
+
+div.userEventsHeader, .userRisksHeader {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold; }
+
+div.userEventsWrapper, div.userRisksWrapper {
+  background-color: #fcfcfc;
+  padding: 5px;
+  border: 1px solid #ececec;
+  color: #666;
+  font-size: 13px; }
+  div.userEventsWrapper div.userEvents, div.userEventsWrapper div.userRisks, div.userRisksWrapper div.userEvents, div.userRisksWrapper div.userRisks {
+    padding: 5px 3px;
+    border-bottom: 1px solid #ececec; }
+  div.userEventsWrapper div.title, div.userRisksWrapper div.title {
+    font-weight: bold; }
+  div.userEventsWrapper div.timeDate, div.userRisksWrapper div.timeDate {
+    text-transform: uppercase; }
+
+div.userRisksWrapper {
+  width: 290px; }
+  div.userRisksWrapper .userRiskRow {
+    border-bottom: 1px solid #ececec;
+    padding: 5px 0;
+    width: 290px; }
+  div.userRisksWrapper .userRiskLabel {
+    padding: 0 0 0 3px;
+    font-size: 14px; }
+  div.userRisksWrapper .userRiskScore {
+    padding: 0 3px 0 0;
+    font-size: 18px; }
+
+#incidentsDetailsWrapper {
+  margin-top: 20px; }
+
+div.headingWrap {
+  margin-top: 25px; }
+
+div.orgTitle {
+  color: #999;
+  font-size: 32px; }
+
+div.userRow {
+  padding: 5px 0;
+  border-bottom: 1px solid #ececec;
+  width: 940px;
+  color: #999; }
+  div.userRow ul.userDevices, div.userRow ul.userClouds, div.userRow ul.locations, div.userRow ul.userIncidents {
+    width: 135px; }
+    div.userRow ul.userDevices li:nth-child(1), div.userRow ul.userClouds li:nth-child(1), div.userRow ul.locations li:nth-child(1), div.userRow ul.userIncidents li:nth-child(1) {
+      margin-bottom: 12px;
+      padding-top: 6px;
+      font-size: 23px;
+      text-align: center; }
+    div.userRow ul.userDevices li:nth-child(2), div.userRow ul.userClouds li:nth-child(2), div.userRow ul.locations li:nth-child(2), div.userRow ul.userIncidents li:nth-child(2) {
+      color: #aaa;
+      font-size: 12px;
+      text-transform: uppercase;
+      text-align: center; }
+  div.userRow ul.incidentDescription {
+    width: 395px; }
+
+div.deviceRow {
+  padding: 5px 0;
+  border-bottom: 1px solid #ececec;
+  width: 940px;
+  color: #999; }
+  div.deviceRow ul.userDevices, div.deviceRow ul.userClouds, div.deviceRow ul.locations, div.deviceRow ul.userIncidents {
+    width: 135px; }
+    div.deviceRow ul.userDevices li:nth-child(1), div.deviceRow ul.userClouds li:nth-child(1), div.deviceRow ul.locations li:nth-child(1), div.deviceRow ul.userIncidents li:nth-child(1) {
+      margin-bottom: 12px;
+      padding-top: 6px;
+      font-size: 23px;
+      text-align: center; }
+    div.deviceRow ul.userDevices li:nth-child(2), div.deviceRow ul.userClouds li:nth-child(2), div.deviceRow ul.locations li:nth-child(2), div.deviceRow ul.userIncidents li:nth-child(2) {
+      color: #aaa;
+      font-size: 12px;
+      text-transform: uppercase;
+      text-align: center; }
+
+div.userIncidentRow {
+  padding: 5px 0;
+  border-bottom: 1px solid #ececec;
+  width: 940px;
+  color: #555; }
+  div.userIncidentRow ul.userIncidentType {
+    width: 100px; }
+  div.userIncidentRow ul.incidentDescription {
+    width: 640px; }
+    div.userIncidentRow ul.incidentDescription li.incidentMessage {
+      padding-top: 5px;
+      font-size: 13px; }
+    div.userIncidentRow ul.incidentDescription li.incidentTimeDate {
+      padding-top: 10px;
+      color: #999;
+      font-size: 13px;
+      text-transform: uppercase; }
+    div.userIncidentRow ul.incidentDescription li.incidentTitle {
+      padding-top: 5px;
+      font-weight: bold; }
+  div.userIncidentRow ul.incidentAction {
+    width: 100px; }
+    div.userIncidentRow ul.incidentAction li {
+      padding-top: 13px; }
+  div.userIncidentRow li.incidentIcon {
+    padding: 5px 0 0 15px; }
+
+ul.userRisk, ul.deviceRisk {
+  width: 100px; }
+  ul.userRisk li.riskScore, ul.deviceRisk li.riskScore {
+    margin-bottom: 10px;
+    padding-top: 6px;
+    font-size: 23px;
+    text-align: center; }
+  ul.userRisk li.riskLabel, ul.deviceRisk li.riskLabel {
+    background: url(/images/trend_static_pos.png) no-repeat center;
+    height: 20px;
+    line-height: 20px; }
+
+ul.userMeta, ul.deviceMeta {
+  width: 300px; }
+  ul.userMeta li.titleDepartment, ul.userMeta li.deviceOwner, ul.deviceMeta li.titleDepartment, ul.deviceMeta li.deviceOwner {
+    font-size: 13px;
+    text-transform: uppercase; }
+  ul.userMeta li.location, ul.deviceMeta li.location {
+    color: #aaa;
+    font-size: 13px; }
+
+div.userRow.incident, div.deviceRow.incident, div.userIncidentRow.incident {
+  background-color: #fff; }
+  div.userRow.incident li.riskLabel, div.deviceRow.incident li.riskLabel, div.userIncidentRow.incident li.riskLabel {
+    background: url(/images/trend_up_neg.png) no-repeat center; }
+
+ul.incidentAction {
+  width: 100px; }
+  ul.incidentAction li {
+    padding-top: 13px; }
+
+#userDetailsChart {
+  margin-bottom: 10px;
+  width: 940px; }
+  #userDetailsChart div.userDetailsUsage {
+    background: transparent url(/images/chart_bg_eee.png) repeat; }
+  #userDetailsChart div.userDetailsUsageDescription {
+    padding: 5px;
+    color: #555;
+    font-size: 12px; }
+
+div.eventsSeparator {
+  margin-top: 20px; }
+
+.hackWrapper {
+  border-top: 1px solid #eee; }
+
+.hackSpace {
+  margin-left: 5px; }
+
+.blue {
+  background-color: blue; }
+
+.red {
+  background-color: red; }
+
+.shadow {
+  -moz-box-shadow: 0px 1px 2px #dddddd;
+  -webkit-box-shadow: 0px 1px 2px #dddddd;
+  box-shadow: 0px 1px 2px #dddddd;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color'); }

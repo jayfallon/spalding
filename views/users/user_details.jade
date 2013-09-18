@@ -1,0 +1,59 @@
+extends ../layouts/default
+
+block content
+	div.container
+
+		include ../includes/_user_vanity
+
+		.row
+			.span12
+				include ../includes/_organization_user_details_nav
+		.row
+			.span12
+				include ../includes/_user_details_default
+				
+
+		.row
+			.span12
+				#organizationUsers
+					- x = 93
+					- for (i=0;i<=2;i++)
+						div.userIncidentRow.pull-left.incident
+							ul.userIncidentType.pull-left
+								li.incidentIcon
+									img(src="/images/temp_icon.png")
+							ul.incidentDescription.pull-left
+								li.incidentTitle 
+									a(href="/users/username/incidents/incidentname") Firstname Lastname re-enabled account name_name.
+								li.incidentMessage Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								li.incidentTimeDate May 13th, 2013 at 03:19:21 UTC
+							div.pull-right
+								ul.incidentAction.pull-left
+									li.dismiss
+										button.btn.btn-danger Action
+
+		.row
+			.span12
+				div.eventsSeparator
+		.row
+			.span8
+				include ../includes/_user_events
+			.span4
+				include ../includes/_user_risks
+
+
+block document
+
+	include ../includes/_username_document
+
+	include ../includes/_compromises_document
+
+	script
+		$(function(){
+			//$("#locationRollUp a:nth-child(1) ul").addClass('active');
+			$("div.userEvents").last().css("border-bottom","0px");
+			$("li.dismiss button").click(function(){
+				$(this).toggleClass("btn-danger");
+				$(this).parents().toggleClass("incident");
+			});
+		});

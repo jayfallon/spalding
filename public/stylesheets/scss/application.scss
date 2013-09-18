@@ -1,0 +1,527 @@
+html, body{
+	background-color: #555;
+	color: #555;
+}
+
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#wrapper{
+	background: #fafafa;
+	padding-bottom: 20px;
+}
+
+footer{
+	padding: 20px;
+	color: #ababab;
+	font-size: 13px;
+	text-transform: uppercase;
+	a{
+		color: #ababab;
+	}
+	a:hover{
+		color: #fff;
+	}
+}
+
+ul.footerMenu{
+	li{
+		margin-left: 12px;
+		float: left;
+	}
+}
+
+
+#pageHeader{
+	padding-top: 15px;
+}
+
+.userdrop{
+	margin: 6px 0 0 12px;
+}
+
+#navWrapper{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cfcfcf;
+	width: 940px;
+}
+
+h1.logo{
+	background: url(/images/logo.png) no-repeat;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	width: 200px;
+	a{
+		height: 40px;
+		width: 200px;
+		position: absolute;
+	}
+	span{
+		display: none;
+	}
+}
+
+ul#secondary_nav{
+	//margin-top: 10px;
+}
+
+div.userTile{
+	background: #FDFDFD url(/images/trend_static_pos.png) no-repeat center 59px;
+	margin: 4px;
+	padding: 10px 10px;
+	width: 160px;
+	min-height: 160px;
+	text-align: center;
+	li.riskScore{
+		color: #c1c1c1;
+		font-size: 40px;
+		line-height: 36px;
+	}
+	li.trend{
+		height: 25px;
+	}
+	li.attitude{
+		min-height: 20px;
+		padding-top: 14px;
+		color: #888;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+	li.attitudeCount{
+		min-height: 24px;
+		padding-bottom: 10px;
+		color: #888;
+		font-size: 20px;
+	}
+	li.userName{
+		color: #888;
+		font-size: 14px;
+	}
+	li.department{
+		color: #aaa;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+}
+
+div.trendStaticNeg{
+	background: #FFF url(/images/trend_static_neg.png) no-repeat center 59px;
+	li.riskScore{
+		color: #777;
+	}
+}
+
+div.trendUpPos{
+	background: #FDFDFD url(/images/trend_up_pos.png) no-repeat center 59px;
+}
+
+div.trendDownPos{
+	background: #FDFDFD url(/images/trend_down_pos.png) no-repeat center 59px;
+}
+
+div.trendUpNeg{
+	background: #FFF url(/images/trend_up_neg.png) no-repeat center 59px;
+	li.riskScore{
+		color: #777;
+	}
+}
+
+div.trendDownNeg{
+	background: #FFF url(/images/trend_down_neg.png) no-repeat center 59px;
+	li.riskScore{
+		color: #777;
+	}
+}
+
+
+#mapWrapper{
+	padding: 5px;
+	a{
+		color: #999;
+		font-weight: bold;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+}
+
+#map{
+	background: #fff;
+	margin-bottom: 10px;
+	display: none;
+}
+
+#locationRollUp{
+	background: #fdfdfd;
+	margin: 0 0 10px 0;
+}
+
+ul.locationRollUp{
+	margin: 0 auto;
+	border-right: 1px solid #f3f3f3;
+	border-left: 1px solid #fff;
+	width: 154px;
+	text-align: center;
+	li.sum{
+		padding: 10px 0;
+		color: #ababab;
+		font-size: 40px;
+		line-height: 36px; 
+	}
+	li.locationLabel{
+		padding-bottom: 10px;
+		color: #bababa;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+}
+
+ul.locationRollUp:hover{
+	background-color: #c1c1c1;
+	li{
+		color: #fff;
+	}
+	color: #fafafa;
+}
+
+ul.locationRollUp.active{
+	background-color: #aaa;
+	border-right: 0;
+	li{
+		color: #fafafa;
+	}
+}
+
+ul.locationRollUpFirst{
+	width: 157px;
+	border-left: 0px;
+}
+
+ul.locationRollUpLast{
+	width: 157px;
+	border-right: 0px;
+}
+
+#locationUsers{
+	margin-top: 10px;
+}
+
+#vanityWrapper{
+	margin-bottom: 25px;
+	width: 940px;
+	div.user_details_avatar{
+		background-color: #fff;
+		padding: 5px;
+	}
+}
+
+ul.user_details_vanity{
+	margin-left: 12px;
+	a{
+		text-decoration: none;
+	}
+	li.username{
+		color: #777;
+		font-size: 18px;
+	}
+	li.title{
+		margin-top: 5px;
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+	li.department{
+		
+	}
+	li.location{
+		
+	}
+}
+
+ul.risk_score{
+	color: #999;
+	width: 154px;
+	li{
+		margin-bottom: 12px;
+		text-align: center;
+	}
+	li.totalScore{
+		font-size: 40px;
+	}
+	li.totalScoreLabel{
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+	li.trend{
+		background: url(/images/trend_up_pos.png) no-repeat center;
+		height: 25px;
+	}
+}
+
+#userCompromisesWrapper{
+	margin-top: 4px;
+}
+
+div.compromiseHeaderWrapper{
+	background-color: #fff;
+	padding-bottom: 8px;
+	cursor: pointer;
+	div.timeDate{
+		padding: 10px;
+		text-align: center;
+	}
+	div.compromiseHeader{	
+		padding: 10px;
+		font-weight: bold;
+	}
+}
+
+div.compromiseDetailsWrapper{
+	padding: 10px 0;
+	display: none;
+	div.compromiseDetail{
+		padding: 5px 20px;
+		width:270px;
+	}
+}
+
+div.userEventsHeader, .userRisksHeader{
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+	font-weight: bold;
+}
+
+div.userEventsWrapper, div.userRisksWrapper{
+	background-color: #fcfcfc;
+	padding: 5px;
+	border: 1px solid #ececec;
+	color: #666;
+	font-size: 13px;
+	div.userEvents, div.userRisks{
+		padding: 5px 3px;
+		border-bottom: 1px solid #ececec;
+	}
+	div.title{
+		font-weight: bold;
+	}
+	div.timeDate{
+		//padding: 10px 5px;
+		text-transform: uppercase;
+	}	
+}
+
+div.userRisksWrapper{
+	width: 290px;
+	.userRiskRow{
+		border-bottom: 1px solid #ececec;
+		padding: 5px 0;
+		width: 290px;
+	}
+	.userRiskLabel{
+		padding: 0 0 0 3px;
+		font-size: 14px;
+	}
+	.userRiskScore{		
+		padding: 0 3px 0 0;
+		font-size: 18px;
+	}
+}
+
+#incidentsDetailsWrapper{
+	margin-top: 20px;
+}	
+
+// spalding
+div.headingWrap{
+	margin-top: 25px;
+}
+div.orgTitle{
+	color: #999;
+	font-size: 32px;
+}
+	
+div.userRow{
+	padding: 5px 0;
+	border-bottom: 1px solid #ececec;
+	width: 940px;
+	color: #999;
+	ul.userDevices,ul.userClouds ,ul.locations,ul.userIncidents{
+		width: 135px;
+		li:nth-child(1){
+			margin-bottom: 12px;
+			padding-top: 6px;
+			font-size: 23px;
+			text-align: center;
+		}
+		li:nth-child(2){
+			color: #aaa;
+			font-size: 12px;
+			text-transform: uppercase;
+			text-align: center;
+		}
+	}
+	ul.incidentDescription{
+		width: 395px;
+	}
+}
+
+div.deviceRow{
+	padding: 5px 0;
+	border-bottom: 1px solid #ececec;
+	width: 940px;
+	color: #999;
+	ul.userDevices,ul.userClouds ,ul.locations,ul.userIncidents{
+		width: 135px;
+		li:nth-child(1){
+			margin-bottom: 12px;
+			padding-top: 6px;
+			font-size: 23px;
+			text-align: center;
+		}
+		li:nth-child(2){
+			color: #aaa;
+			font-size: 12px;
+			text-transform: uppercase;
+			text-align: center;
+		}
+	}
+}
+
+div.userIncidentRow{
+	padding: 5px 0;
+	border-bottom: 1px solid #ececec;
+	width: 940px;
+	color: #555;
+	ul.userIncidentType{
+		width: 100px;
+	}
+	ul.incidentDescription{
+		width: 640px;
+		li.incidentMessage{
+			padding-top: 5px;
+			font-size: 13px;
+		}
+		li.incidentTimeDate{
+			padding-top: 10px;
+			color: #999;
+			font-size: 13px;
+			text-transform: uppercase;
+		}
+		li.incidentTitle{
+			padding-top: 5px;
+			font-weight: bold;
+		} 
+	}
+	ul.incidentAction{
+		width: 100px;
+		li{
+			padding-top: 13px;
+		}
+	}	
+	li.incidentIcon{
+		padding: 5px 0 0 15px;
+	}
+}
+	
+
+ul.userRisk, ul.deviceRisk{
+	width: 100px;
+	li.riskScore{
+		margin-bottom: 10px;
+		padding-top: 6px;
+		font-size: 23px;
+		text-align: center;
+	}
+	li.riskLabel{
+		background: url(/images/trend_static_pos.png) no-repeat center;
+		height: 20px;
+		line-height: 20px;
+	}
+}
+
+ul.userMeta, ul.deviceMeta{
+	width: 300px;
+	li.username{
+		
+	}
+	li.titleDepartment, li.deviceOwner{
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+	li.location{
+		color: #aaa;
+		font-size: 13px;		
+	}
+}
+
+div.userRow.incident, div.deviceRow.incident,div.userIncidentRow.incident{
+	background-color: #fff;
+	li.riskLabel{
+		background: url(/images/trend_up_neg.png) no-repeat center;
+	}
+}
+
+ul.incidentAction{
+	width: 100px;
+	li{
+		padding-top: 13px;
+	}
+}
+
+#userDetailsChart{
+	margin-bottom: 10px;
+	width: 940px;
+	div.userDetailsUsage{
+		background: transparent url(/images/chart_bg_eee.png) repeat;
+	}
+	div.userDetailsUsageDescription{
+		padding: 5px;
+		color: #555;
+		font-size: 12px;
+	}
+}
+
+//refactor
+
+div.eventsSeparator{
+	margin-top: 20px;
+}
+.hackWrapper{
+	border-top: 1px solid #eee;	
+}
+
+.hackSpace{
+	margin-left: 5px
+}
+
+.blue{
+	background-color: blue
+}
+
+.red{
+	background-color: red;
+}
+
+
+@mixin shadow($color: #333333) {
+  -moz-box-shadow: 0px 1px 2px $color;
+  -webkit-box-shadow: 0px 1px 2px $color;
+  box-shadow: 0px 1px 2px $color;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color');
+}
+
+.shadow {
+  @include shadow(#ddd);
+}

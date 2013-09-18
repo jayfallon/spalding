@@ -1,0 +1,75 @@
+extends ../layouts/default
+
+block content
+	div.container
+
+		.row
+			.span12
+				include ../includes/_organization_nav
+				
+		include ../includes/_organization_filter_map
+
+		.row
+			.span12
+				#organizationUsers
+					- x = 93
+					- for (i=0;i<=10;i++)
+						div.userRow.pull-left.incident
+							ul.userRisk.pull-left
+								li.riskScore= (x--)
+								li.riskLabel 
+							ul.userMeta.pull-left
+								li.username 
+									a(href="/department/departmentname") Provider Name
+								li.titleDepartment
+									span= Math.floor(Math.random()*30+1)
+									span &nbsp;Active Users
+								li.location Location, Location
+							ul.userDevices.pull-left
+								li.deviceScore= Math.floor(Math.random()*9+1)
+								li.deviceLabel Devices
+							ul.userClouds.pull-left
+								li.cloudScore= Math.floor(Math.random()*30+1)
+								li.cloudLabel Cloud Services
+							ul.locations.pull-left
+								li.locationsScore= Math.floor(Math.random()*9+1)
+								li.locationsLabel Locations
+							ul.userIncidents.pull-right
+								li.incidentScore= Math.floor(Math.random()*9+1)
+								li.incideLabel Incidents
+					- for (i=0;i<=42;i++)
+						a(href="/users/usernames")
+							div.userRow.pull-left
+								ul.userRisk.pull-left
+									li.riskScore= (x--)
+									li.riskLabel 
+								ul.userMeta.pull-left
+									li.username 
+										a(href="/department/departmentname") Provider Name
+									li.titleDepartment
+										span= Math.floor(Math.random()*30+1)
+										span &nbsp;Active Users
+									li.location Location, Location
+								ul.userDevices.pull-left
+									li.deviceScore= Math.floor(Math.random()*9+1)
+									li.deviceLabel Devices
+								ul.userClouds.pull-left
+									li.cloudScore= Math.floor(Math.random()*30+1)
+									li.cloudLabel Cloud Services
+								ul.locations.pull-left
+									li.locationsScore= Math.floor(Math.random()*9+1)
+									li.locationsLabel Locations
+								ul.userIncidents.pull-left
+									li.incidentScore 0
+									li.incideLabel Incidents
+
+					
+						
+				
+
+block document
+	include ../includes/_organization_document
+	script
+		$(function(){
+			$("#locationRollUp a:nth-child(1) ul, ul#organization_nav li:nth-child(4)").addClass('active');
+		});

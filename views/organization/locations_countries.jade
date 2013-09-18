@@ -1,0 +1,98 @@
+extends ../layouts/default
+
+block content
+	div.container
+		.row
+			.span12
+				include ../includes/_organization_nav
+		
+				form
+					ul#users_filter.nav.pull-right
+						input(type="text", placeholder="Search")
+
+		.row
+			.span12
+				include ../includes/_locations_nav
+				
+
+		
+		include ../includes/_locations_map
+
+
+		.row
+			.span12
+				#locationUsers
+					- x = 87
+					- for (i = 0; i <= 4; i++)
+						a(href="/username")
+							div.userTile.pull-left.shadow.trendUpNeg
+								ul
+									li.riskScore= (x--)
+									li.trend
+									li.attitude Users
+									li.attitudeCount= Math.floor(Math.random()*100+1)
+									li.userName  
+									li.department Country Name
+					- for (i = 0; i <= 7; i++)
+						a(href="/username")
+							div.userTile.pull-left.shadow.trendStaticNeg
+								ul
+									li.riskScore= (x--)
+									li.trend
+									li.attitude Users
+									li.attitudeCount= Math.floor(Math.random()*100+1)
+									li.userName  
+									li.department Country Name
+					- for (i = 0; i <= 21; i++)
+						a(href="/username")
+							div.userTile.pull-left.shadow.trendUpPos
+								ul
+									li.riskScore= (x--)
+									li.trend
+									li.attitude Users
+									li.attitudeCount= Math.floor(Math.random()*100+1)
+									li.userName  
+									li.department Country Name
+					- for (i = 0; i <= 9; i++)
+						a(href="/username")
+							div.userTile.pull-left.shadow
+								ul
+									li.riskScore= (x--)
+									li.trend
+									li.attitude Users
+									li.attitudeCount= Math.floor(Math.random()*100+1)
+									li.userName  
+									li.department Country Name
+
+					- for (i = 0; i <= 154; i++)
+						a(href="/username")
+							div.userTile.pull-left.shadow
+								ul
+									li.riskScore 20
+									li.trend
+									li.attitude Users
+									li.attitudeCount= Math.floor(Math.random()*100+1)
+									li.userName  
+									li.department Country Name
+
+					- for (i = 0; i <= 100; i++)
+						a(href="/username")
+							div.userTile.pull-left.shadow
+								ul
+									li.riskScore 11
+									li.trend
+									li.attitude Users
+									li.attitudeCount= Math.floor(Math.random()*100+1)
+									li.userName  
+									li.department Country Name
+
+					
+						
+				
+
+block document
+	include ../includes/_locations_document
+	script
+		$(function(){
+			$("#locationRollUp a:nth-child(6) ul").addClass('active');
+		});

@@ -1,0 +1,9 @@
+script
+	$(function(){
+		$('#organization_nav li:nth-child(3), #main_nav li:nth-child(2)').addClass('active');
+		$("ul.locationRollUp").first().addClass('locationRollUpFirst');
+		$("ul.locationRollUp").last().addClass('locationRollUpLast');
+		$('#mapWrapper a').click(function(){
+			$('#map').slideToggle();
+		});
+	});

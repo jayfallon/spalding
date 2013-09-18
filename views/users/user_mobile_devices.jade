@@ -1,0 +1,49 @@
+extends ../layouts/default
+
+block content
+	div.container
+
+		include ../includes/_user_vanity
+
+		.row
+			.span12
+				include ../includes/_organization_user_details_nav
+		.row
+			.span12
+				include ../includes/_user_details_default
+
+		.row
+			.span12
+				- for (i=0;i<=3;i++)
+					div.deviceRow.pull-left
+						ul.deviceRisk.pull-left
+							li.riskScore= (x--)
+							li.riskLabel 
+						ul.deviceMeta.pull-left
+							li.devicename 
+								a(href="/department/departmentname") Device Name
+							li.deviceOwner
+								a(href="/users/username") Owner Name
+							li.location Location, Location
+						div.pull-right
+							ul.userClouds.pull-left
+								li.cloudScore= Math.floor(Math.random()*30+1)
+								li.cloudLabel Cloud Services
+							ul.locations.pull-left
+								li.locationsScore= Math.floor(Math.random()*9+1)
+								li.locationsLabel Locations
+							ul.userIncidents.pull-right
+								li.incidentScore= Math.floor(Math.random()*9+1)
+								li.incideLabel Incidents
+
+
+block document
+
+	include ../includes/_username_document
+
+	include ../includes/_compromises_document
+
+	script
+		$(function(){
+			$("#locationRollUp a:nth-child(1) ul").addClass('active');
+		});

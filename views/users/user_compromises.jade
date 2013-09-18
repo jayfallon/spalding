@@ -1,0 +1,34 @@
+extends ../layouts/default
+
+block content
+	div.container
+		.row
+			.span12
+				//include ../includes/_users_nav
+		
+				form
+					ul#users_filter.nav.pull-right
+						input(type="text", placeholder="Search")
+
+		include ../includes/_user_vanity
+
+		.row
+			.span12
+				include ../includes/_user_details_nav
+				
+
+		.row
+			.span12
+				include ../includes/_user_compromises
+
+
+block document
+
+	include ../includes/_username_document
+
+	include ../includes/_compromises_document
+
+	script
+		$(function(){
+			$("#locationRollUp a:nth-child(1) ul").addClass('active');
+		});

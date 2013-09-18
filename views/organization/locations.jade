@@ -1,0 +1,67 @@
+extends ../layouts/default
+
+block content
+	div.container
+		.row
+			.span12
+				include ../includes/_organization_nav
+		
+				form
+					ul#users_filter.nav.pull-right
+						input(type="text", placeholder="Search")
+
+		.row
+			.span12
+				#locationRollUp.shadow.pull-left
+
+					a(href="#users	")
+						ul.locationRollUp.pull-left
+							li.sum= Math.floor(Math.random()*700)
+							li.locationLabel Users
+
+					a(href="#users	")
+						ul.locationRollUp.pull-left
+							li.sum= Math.floor(Math.random()*25)
+							li.locationLabel Departments
+
+					a(href="#users	")
+						ul.locationRollUp.pull-left
+							li.sum= Math.floor(Math.random()*45)
+							li.locationLabel Services
+
+					a(href="#users	")
+						ul.locationRollUp.pull-left
+							li.sum= Math.floor(Math.random()*100)
+							li.locationLabel Organizations
+
+					a(href="#users	")
+						ul.locationRollUp.pull-left
+							li.sum= Math.floor(Math.random()*25000)
+							li.locationLabel Locations
+
+					a(href="#users	")
+						ul.locationRollUp.pull-left
+							li.sum= Math.floor(Math.random()*193)
+							li.locationLabel Countries
+				
+
+		
+		.row
+			.span12
+				#map.shadow
+					img(src="/images/map01.png")
+
+		
+		.row
+			.span12
+				#locationsData
+						
+				
+
+block document
+	script
+		$(function(){
+			$('#organization_nav li:nth-child(1), #main_nav li:nth-child(2)').addClass('active');
+			$("ul.locationRollUp").first().addClass('locationRollUpFirst');
+			$("ul.locationRollUp").last().addClass('locationRollUpLast');
+		});

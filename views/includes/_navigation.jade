@@ -1,0 +1,27 @@
+.container
+	.row
+		.span12
+			h1.logo.pull-left
+				a(href="/")
+					span Razor - Spalding
+
+			ul#secondary_nav.nav.pull-right
+				li.pull-left
+					form.navbar-search
+						input(type="text", class="search-query", placeholder="Search")
+				li.dropdown.userdrop.pull-left
+					a(href="#", class="dropdown-toggle", data-toggle="dropdown") Username
+						b.caret
+					ul.dropdown-menu
+						li
+							a(href="/collectors") Collectors
+						li
+							a(href="/settings") Settings
+						li
+							a(href="/help") Help
+						li.divider
+						li
+							a(href="logout") Sign Out
+
+			
+						

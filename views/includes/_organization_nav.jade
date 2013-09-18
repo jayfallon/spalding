@@ -1,0 +1,34 @@
+#locationRollUp.shadow.pull-left
+
+	- x = Math.floor(Math.random()*700+1)
+	
+
+	a(href="/organization/users")
+		ul.locationRollUp.pull-left
+			li.sum= x
+			li.locationLabel Users
+
+	a(href="/organization/devices")
+		ul.locationRollUp.pull-left
+			li.sum= (x+47)
+			li.locationLabel Devices
+
+	a(href="/organization/cloud_services")
+		ul.locationRollUp.pull-left
+			li.sum= Math.floor(Math.random()*30+1)
+			li.locationLabel Cloud Services
+
+	a(href="/organization/locations")
+		ul.locationRollUp.pull-left
+			li.sum= Math.floor(x/5)
+			li.locationLabel Locations
+
+	a(href="/organization/incidents")
+		ul.locationRollUp.pull-left
+			li.sum= Math.floor(Math.random()*12+1)
+			li.locationLabel Incidents
+
+	a(href="#")
+		ul.locationRollUp.pull-left
+			li.sum= Math.floor(Math.random()*100+1)
+			li.locationLabel Risk

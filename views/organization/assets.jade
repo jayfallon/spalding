@@ -1,0 +1,41 @@
+extends ../layouts/default
+
+block content
+	div.container
+		.row
+			.span12
+				include ../includes/_organization_nav
+		
+				form
+					ul#users_filter.nav.pull-right
+						input(type="text", placeholder="Search")
+
+		.row
+			.span12
+				include ../includes/_assets_nav
+				
+		include ../includes/_locations_map
+
+		.row
+			.span12
+				#locationUsers
+					- x = 87
+					- for (i = 0; i <= 18; i++)
+						a(href="/username")
+							div.userTile.pull-left.shadow.trendStaticPos
+								ul
+									li.riskScore= (x--)
+									li.trend
+									li.attitude Users
+									li.attitudeCount= Math.floor(Math.random()*100+1)
+									li.userName Asset Name
+									li.department  Asset Type
+
+block document
+
+	include ../includes/_assets_document
+
+	script
+		$(function(){
+			$("#locationRollUp a:nth-child(1) ul").addClass('active');
+		});
